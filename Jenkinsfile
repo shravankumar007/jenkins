@@ -9,7 +9,7 @@ pipeline{
         }
 
         stage("Test"){
-            steops{
+            steps{
                 sh "npm test"
             }
         }
