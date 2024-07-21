@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    tools {nodejs "node"}
+    tools { nodejs "node"}
     stages{
         stage("Install Dependencies"){
             steps{
@@ -8,7 +8,7 @@ pipeline{
             }
         }
 
-        stages("Test"){
+        stage("Test"){
             steops{
                 sh "npm test"
             }
