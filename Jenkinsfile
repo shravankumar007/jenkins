@@ -3,7 +3,7 @@ pipeline{
     tools {nodejs "node"}
     environment {
         imageName = "jenkins/react_demo"
-        registryCredential = 'jenkins'
+        registryCredential = 'shravan1234'
         dockerImage = ''
 
     }
@@ -30,7 +30,7 @@ pipeline{
         stage("Deploy Image"){
             steps{
                 script{
-                    docker.withRegistry("https://registry.hub.docker.com",'dockerhub-creds'){
+                    docker.withRegistry("https://registry.hub.docker.com",'docker-cred'){
                     dockerImage.push{"${env.BUILD_NUMBER}"}
                     }
                 }
