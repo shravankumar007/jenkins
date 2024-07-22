@@ -3,7 +3,7 @@ pipeline{
     tools {nodejs "node"}
     environment {
         imageName = "jenkins/react_demo"
-        registryCredential = 'shravan1234'
+        registryCredential = 'shravan567'
         dockerImage = ''
 
     }
